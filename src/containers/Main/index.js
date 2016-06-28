@@ -1,5 +1,4 @@
 import React from 'react'
-import {Link} from 'react-router'
 
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
@@ -9,6 +8,7 @@ import Hero from '../../components/blocks/Hero'
 import Text from '../../components/blocks/Text'
 
 const Main = (props) => {
+  window.console.log('MainContainerProps: ', props)
   return (
     <div style={{width: '100%'}}>
       <Hero />
@@ -19,6 +19,7 @@ const Main = (props) => {
 
 
 function mapStateToProps(state) {
+  window.console.log('MainContainerState: ', state)
   return {
   //  fuelSavings: state.fuelSavings
   }

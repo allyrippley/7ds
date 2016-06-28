@@ -6,6 +6,7 @@ import {bindActionCreators} from 'redux'
 import * as actions from '../actions/heroActions'
 
 const HomePage = (props) => {
+  window.console.log('HomePageProps: ', props)
   return (
     <div>
       <h1>React Slingshot</h1>

@@ -29,6 +29,9 @@ class LinkApi {
       setTimeout(() => {
         resolve(Object.assign([], links))
       }, delay)
+      if (reject) {
+        window.console.log('reeeejected!')
+      }
     })
   }
 
@@ -66,6 +69,9 @@ class LinkApi {
         links.splice(indexOfLinkToDelete, 1)
         resolve()
       }, delay)
+      if (reject) {
+        window.console.log('reeeeejected!')
+      }
     })
   }
 }

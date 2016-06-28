@@ -17,5 +17,11 @@ export default {
     height: '100%',
     maxWidth: '100%',
     overflow: 'scroll'
+  },
+  link: {
+
+  },
+  icon: {
+    padding: 5
   }
 }

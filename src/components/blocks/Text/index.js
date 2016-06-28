@@ -29,6 +29,7 @@ styles.textHolder = {
 
 
 const Text = (props) => {
+  window.console.log('TextBlockProps: ', props)
   return (
     <section style={styles.container}>
       <div style={styles.textHolder}>
@@ -36,7 +37,7 @@ const Text = (props) => {
           <h2>
             Committed to Shipping
             <br />
-            First-class Solutions
+            <Link to="/">First-class Solutions</Link>
           </h2>
           <hr />
           <p>

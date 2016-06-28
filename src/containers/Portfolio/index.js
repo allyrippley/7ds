@@ -1,24 +1,23 @@
 import React from 'react'
-import {Link} from 'react-router'
 
 import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import * as actions from '../../actions/heroActions'
 
-import Hero from '../../components/blocks/Hero'
-import Text from '../../components/blocks/Text'
+import PhotoGrid from '../../components/blocks/PhotoGrid'
 
 const Main = (props) => {
+  window.console.log('MainPortfolioProps: ', props)
   return (
     <div style={{width: '100%'}}>
-      <Hero />
-      <Text />
+      <PhotoGrid />
     </div>
   )
 }
 
 
 function mapStateToProps(state) {
+  window.console.log('MainPortfolioState: ', state)
   return {
   //  fuelSavings: state.fuelSavings
   }
