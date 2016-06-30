@@ -9,14 +9,20 @@ const Contact = (props) => {
   return (
     <div style={{width: '100%'}}>
       <div>
-        <form style={{display: 'flex', flex: 1, flexDirection: 'column', flexWrap: 'wrap'}}>
-          <div style={{flex: 1, maxWidth: 600}}>
-            <input style={{height: 30, margin: 3, flex: .5, width: '40%'}} type="text" />
-            <input style={{height: 30, margin: 3, flex: .5, width: '40%'}} type="text" />
-          </div>
-          <div style={{flex: 1, maxWidth: 600}}>
-            <input style={{height: 30, margin: 3, flex: 1, width: '80%'}} type="text" />
-          </div>
+        <form style={{display: 'flex', flex: 1, flexDirection: 'column', margin: '0 auto', flexWrap: 'wrap', maxWidth: '600px'}}>
+            <div style={{display: 'flex'}}>
+              <div style={{width: '48%', margin: '1%'}}>
+                <input style={{height: 30, width: '100%'}} type="text" placeholder="First"/>
+              </div>
+              <div style={{width: '48%', margin: '1%'}}>
+                <input style={{height: 30, width: '100%'}} type="text" placeholder="Last"/>
+              </div>
+            </div>
+            <div>
+              <div style={{width: '98%', margin: '1%'}}>
+                <input style={{height: 30, width: '100%'}} type="text" placeholder="Email"/>
+              </div>
+            </div>
         </form>
       </div>
     </div>

@@ -1,21 +1,18 @@
 export default {
   root: {
-    height: '100%'
-  },
-  nav: {
-    alignSelf: 'stretch',
-    justifyContent: 'space-around',
-    backgroundColor: 'rgba(255, 255, 255, 1)',
-    padding: '10px',
-    display: 'fixed',
-    top: 0
+    position: 'absolute',
+    top: 0,
+    bottom: 0,
+    left: 0,
+    right: 0
   },
   view: {
     backgroundColor: '#eee',
     display: 'flex',
     flex: 1,
-    height: '100%',
     maxWidth: '100%',
-    overflow: 'scroll'
+    top: '55px',
+    bottom: 0,
+    overflow: 'auto'
   }
 }

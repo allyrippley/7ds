@@ -5,18 +5,15 @@ export default {
   nav: {
     alignSelf: 'stretch',
     justifyContent: 'space-around',
-    backgroundColor: 'rgba(255, 255, 255, 1)',
+    backgroundColor: 'rgba(255, 255, 255, .2)',
     padding: '10px',
+    position: 'fixed',
+    zIndex: 100000,
     display: 'flex',
-    top: 0
-  },
-  view: {
-    backgroundColor: '#eee',
-    display: 'flex',
-    flex: 1,
-    height: '100%',
-    maxWidth: '100%',
-    overflow: 'scroll'
+    height: 55,
+    top: 0,
+    left: 0,
+    right: 0
   },
   link: {
 
