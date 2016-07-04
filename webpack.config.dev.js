@@ -17,7 +17,7 @@ export default {
   target: 'web', // necessary per https://webpack.github.io/docs/testing.html#compile-and-test
   output: {
     path: `${__dirname}/dist`, // Note: Physical files are only output by the production build task `npm run build`.
-    publicPath: 'http://localhost:3000/', // Use absolute paths to avoid the way that URLs are resolved by Chrome when they're parsed from a dynamically loaded CSS blob. Note: Only necessary in Dev.
+    publicPath: 'http://localhost:3002/', // Use absolute paths to avoid the way that URLs are resolved by Chrome when they're parsed from a dynamically loaded CSS blob. Note: Only necessary in Dev.
     filename: 'bundle.js'
   },
   plugins: [
@@ -35,7 +35,7 @@ export default {
       {test: /\.css$/, loaders: ['style', 'css', 'next']},
       {test: /\.(jpe?g|png|gif)$/i, loaders: ['file-loader?name=img/img-[hash:6].[ext]']},
       {test: /\.ico$/, loader: 'file-loader?name=[name].[ext]'},
-      {test: /(\.css|\.scss)$/, loaders: ['style', 'css?sourceMap', 'sass?sourceMap']}
+      {test: /\.scss$/, loaders: ['style', 'css?sourceMap', 'sass?sourceMap']}
     ]
   }
 }

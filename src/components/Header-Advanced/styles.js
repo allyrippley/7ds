@@ -14,7 +14,7 @@ export default {
     right: 0
   },
   container: {
-    display: 'flex',
+    display: 'flex'
   },
   headerItem: {
     flex: '.33',

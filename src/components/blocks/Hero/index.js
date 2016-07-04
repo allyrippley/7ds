@@ -45,7 +45,7 @@ styles.container2 = {
   backgroundRepeat: 'no-repeat'
 }
 
-styles.pill = {
+styles.pillButton = {
   border: '2px solid #fff',
   margin: '0 auto',
   maxWidth: '300px',

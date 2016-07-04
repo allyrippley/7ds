@@ -3,7 +3,8 @@ import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import * as actions from '../actions/headerActions'
 import styles from './styles'
-import Header from '../components/Header-Advanced'
+import Header from '../components/Header-Left'
+
 const App = (props) => {
   actions.loadLinks()
   window.console.log(props)

@@ -8,10 +8,12 @@ export default {
   },
   view: {
     backgroundColor: '#eee',
-    display: 'flex',
+    position: 'fixed',
     flex: 1,
     maxWidth: '100%',
-    top: '55px',
+    top: '60px',
+    left: 0,
+    right: 0,
     bottom: 0,
     overflow: 'auto'
   }

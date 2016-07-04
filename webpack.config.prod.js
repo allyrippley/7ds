@@ -32,14 +32,9 @@ export default {
       {test: /\.(woff|woff2)$/, loader: 'file-loader?prefix=font/&limit=5000'},
       {test: /\.ttf(\?v=\d+.\d+.\d+)?$/, loader: 'file-loader?limit=10000&mimetype=application/octet-stream'},
       {test: /\.svg(\?v=\d+.\d+.\d+)?$/, loader: 'file-loader?limit=10000&mimetype=image/svg+xml'},
-      {test: /\.css$/, loader: ['style', 'css', 'next']},
+      {test: /\.css$/, loaders: ['style', 'css', 'next']},
       {test: /\.(jpe?g|png|gif)$/i, loaders: ['file']},
-      {test: /\.ico$/, loader: 'file-loader?name=[name].[ext]'},
-      {
-        test: /(\.css|\.scss)$/,
-        include: path.join(__dirname, 'src'),
-        loader: ExtractTextPlugin.extract('css?sourceMap!sass?sourceMap')
-      }
+      {test: /\.ico$/, loader: 'file-loader?name=[name].[ext]'}
     ]
   }
 }

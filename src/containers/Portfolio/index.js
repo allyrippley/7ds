@@ -5,12 +5,13 @@ import {bindActionCreators} from 'redux'
 import * as actions from '../../actions/heroActions'
 
 import PhotoGrid from '../../components/blocks/PhotoGrid'
-
+import data from './dataFile'
 const Main = (props) => {
   window.console.log('MainPortfolioProps: ', props)
+
   return (
     <div style={{width: '100%'}}>
-      <PhotoGrid />
+      <PhotoGrid data={data} linkPrefix={'portfolio/page'}/>
     </div>
   )
 }

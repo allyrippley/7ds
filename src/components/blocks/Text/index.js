@@ -19,8 +19,9 @@ styles.container = {
   background: '#fff',
   width: '100%',
   textAlign: 'center',
-  height: '536px',
-  overflow: 'hidden'
+  minHeight: '136px',
+  overflow: 'hidden',
+  color: 'black'
 
 }
 styles.textHolder = {
