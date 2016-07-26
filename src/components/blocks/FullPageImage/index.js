@@ -22,5 +22,7 @@ const Full = (props) => {
     </section>
   )
 }
-
+Full.propTypes = {
+  src: React.PropTypes.string
+}
 export default Full

@@ -10,7 +10,10 @@ const Main = (props) => {
   window.console.log('MainPortfolioProps: ', props)
 
   return (
-    <div style={{width: '100%'}}>
+    <div style={{width: '100%', marginTop: 35}}>
+      <div style={{height: 150, display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
+        Test
+      </div>
       <PhotoGrid data={data} linkPrefix={'portfolio/page'}/>
     </div>
   )

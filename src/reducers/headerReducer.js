@@ -7,6 +7,14 @@ export default function linkReducer(state = initialState, action) {
       return Object.assign({}, state, {
         headerLinks: 1
       })
+    case types.SHOW_APP_SUB_MENU:
+      return Object.assign({}, state, {
+        showAppSubMenu: true
+      })
+    case types.HIDE_APP_SUB_MENU:
+      return Object.assign({}, state, {
+        showAppSubMenu: false
+      })
 
     default:
       return state

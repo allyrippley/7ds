@@ -4,20 +4,23 @@ import {connect} from 'react-redux'
 import {bindActionCreators} from 'redux'
 import * as actions from '../../actions/heroActions'
 
-import Hero from '../../components/blocks/HeroFull'
-
-const Main = (props) => {
-  window.console.log('MainContainerProps: ', props)
+const Contact = (props) => {
+  window.console.log('MainContactProps: ', props)
   return (
-    <div style={{width: '100%'}}>
-      <Hero />
+    <div style={{display: 'flex', flex: 1, width: '100%'}}>
+      <div style={{flex: 0.4, backgroundColor: '#777'}}>
+
+      </div>
+      <div style={{flex: 0.6}}>
+
+      </div>
     </div>
   )
 }
 
 
 function mapStateToProps(state) {
-  window.console.log('MainContainerState: ', state)
+  window.console.log('MainContactState: ', state)
   return {
   //  fuelSavings: state.fuelSavings
   }
@@ -32,4 +35,4 @@ function mapDispatchToProps(dispatch) {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Main)
+)(Contact)

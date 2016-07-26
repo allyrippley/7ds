@@ -7,7 +7,7 @@ import * as actions from '../../actions/heroActions'
 const Contact = (props) => {
   window.console.log('MainContactProps: ', props)
   return (
-    <div style={{width: '100%'}}>
+    <div style={{width: '100%', paddingTop: 55}}>
       <div>
         <form style={{display: 'flex', flex: 1, flexDirection: 'column', margin: '0 auto', flexWrap: 'wrap', maxWidth: '600px'}}>
             <div style={{display: 'flex'}}>

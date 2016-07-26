@@ -11,7 +11,7 @@ export default {
     position: 'fixed',
     flex: 1,
     maxWidth: '100%',
-    top: '60px',
+    top: 0,
     left: 0,
     right: 0,
     bottom: 0,
