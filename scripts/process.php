@@ -41,7 +41,7 @@ if (array_key_exists('check_submit', $_POST)) {
    echo "Your comments:<br />{$_POST['Comments']}<br /><br />";
    echo "You are from: {$_POST['Country']}<br />";
    echo "Services request: {$_POST['ServicesRequested']}<br />";
-   echo '<script>window.location.href = "/contactSuccess";</script>';
+   echo '<script>window.location.href = "/contact";</script>';
 } else {
     echo "You can't see this page without submitting the form.";
 }

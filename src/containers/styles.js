@@ -7,7 +7,7 @@ export default {
     right: 0
   },
   view: {
-    backgroundColor: '#eee',
+    backgroundColor: '#000',
     position: 'fixed',
     flex: 1,
     maxWidth: '100%',

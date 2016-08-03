@@ -15,7 +15,7 @@ export default {
     top: 0,
     left: 0,
     right: 0,
-    backgroundColor: 'rgba(255,255,255,.7)'
+    backgroundColor: 'rgba(255,255,255,0)'
   },
   nav: {
     display: 'flex',
@@ -26,14 +26,15 @@ export default {
     alignItems: 'center',
     fontSize: '3vmin',
     color: '#222',
-    fontWeight: 'bold',
+    fontWeight: 'lighter',
     textTransform: 'uppercase'
   },
   navSide: {
     display: 'flex',
     flex: '0.2',
     flexGrow: '0.3',
-    flexWrap: 'nowrap'
+    flexWrap: 'nowrap',
+    alignItems: 'center'
   },
   logo: {
     color: 'rgb(158, 3, 3)',
@@ -49,6 +50,14 @@ export default {
     alignItems: 'center',
     height: '100%',
     padding: 10
+  },
+  linkText: {
+    transition: 'border-bottom 45ms, color 1000ms',
+    color: 'rgba(255,255,255,.7)',
+    ':hover': {
+      borderBottom: '3px solid rgb(158, 3, 3)',
+      color: 'rgba(255,255,255,1)'
+    }
   },
   icon: {
     display: 'none'

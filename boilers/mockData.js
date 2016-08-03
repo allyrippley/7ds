@@ -45,7 +45,7 @@ const sampleData = [
         titleKey: 'sidebar.watchlist',
         path: '/watchlist',
         icon: require('../components/sidebarNavMenu/images/sidebar/watchlist@2x.png'),
-        showBadge: true,
+        showBadge: true
       },
       {
         id: 2,

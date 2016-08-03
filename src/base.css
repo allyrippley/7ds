@@ -1,3 +1,44 @@
+.fadeIn-appear {
+   opacity: 0.01;
+}
+
+.fadeIn-appear.fadeIn-appear-active {
+   opacity: 1;
+   transition: opacity 5000ms ;
+}
+.test-appear {
+   opacity: 0.01;
+}
+
+.test-appear.test-appear-active {
+   opacity: 1;
+   transition: opacity 10000ms ;
+}
+.test2-appear {
+   opacity: 0.01;
+}
+
+.test2-appear.test2-appear-active {
+   opacity: 1;
+   transition: opacity 15000ms ;
+}
+.fadeIn-enter {
+   opacity: 0.01;
+}
+
+.fadeIn-enter.fadeIn-enter-active {
+   opacity: 1;
+   transition: opacity 10000ms ;
+}
+.test-enter {
+   opacity: 0.01;
+}
+
+.test-enter.test-enter-active {
+   opacity: 1;
+   transition: opacity 10000ms ;
+}
+
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
   font-size: 1.33333333em;
@@ -2131,4 +2172,9 @@ table {
 }
 body {
   font-family: 'Open Sans', arial, sans-serif;
+}
+
+/* Custom Reset */
+a {
+  text-decoration: none;
 }

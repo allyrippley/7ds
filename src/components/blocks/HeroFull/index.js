@@ -1,6 +1,6 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link } from 'react-router'
-
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 // import {connect} from 'react-redux'
 // import {bindActionCreators} from 'redux'
 // import * as actions from '../../actions/heroActions'
@@ -19,7 +19,7 @@ styles.container = {
   position: 'fixed',
   zIndex: 5,
   backgroundSize: 'cover',
-  backgroundImage: `url(${require('../../../img/1.jpeg')})`,
+  backgroundImage: `url(${require('../../../img/1sm.jpg')})`,
   backgroundPosition: '50% 0',
   backgroundRepeat: 'no-repeat',
   width: '100%',
@@ -59,16 +59,48 @@ styles.pillButton = {
   borderRadius: '30px'
 }
 
-const Main = (props) => {
-  window.console.log('HeroProps:', props)
-  return (
-    <section style={styles.container}>
-      <h4 style={{fontSize: '3em'}}>Welcome to</h4>
-      <h1 style={styles.title}>7 Design Studios</h1>
-      <Link to="/"><h3 style={{fontSize: '2em'}}>Building Solutions.</h3></Link>
-      <a style={styles.pillButton}>Scroll for more</a>
-    </section>
-  )
+class HeroFull extends Component {
+  constructor(props) {
+    super(props)
+  }
+
+  componentDidMount() {
+    const url = `url(${require('../../../img/1md.png')})`
+    const backdrop = document.getElementById('backdrop')
+      backdrop.style.transition = 'background-image 3000ms'
+    setTimeout(function() {
+      backdrop.style.backgroundImage = url
+    }, 1500)
+  }
+  render() {
+    window.console.log('HeroProps:', this.props)
+
+    return (
+      <section id="backdrop" style={styles.container}>
+        <h4 style={{fontSize: '3em'}}>
+        </h4>
+        <ReactCSSTransitionGroup transitionName="fadeIn"
+          transitionAppear={true} transitionAppearTimeout={5000}
+          transitionEnter={false} transitionLeave={false}>
+          <h1 key="1" id="mastText" style={styles.title}>7 Design Studios</h1>
+        </ReactCSSTransitionGroup>
+        <Link to="/">
+          <ReactCSSTransitionGroup transitionName="test"
+          transitionAppear={true} transitionAppearTimeout={10000} transitionEnter={true}
+          transitionEnterTimeout={10000} transitionLeave={false}>
+            <h3 key="2" style={{fontSize: '2em'}}>Building Solutions.</h3>
+          </ReactCSSTransitionGroup>
+        </Link>
+        <Link to="/portfolio" >
+          <ReactCSSTransitionGroup transitionName="test2"
+          transitionAppear={true} transitionAppearTimeout={15000} transitionEnter={true}
+          transitionEnterTimeout={10000} transitionLeave={false}>
+            <div style={styles.pillButton}>Click for more</div>
+          </ReactCSSTransitionGroup>
+          </Link>
+      </section>
+    )
+  }
 }
 
-export default Main
+export default HeroFull
